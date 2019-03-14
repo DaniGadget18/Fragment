@@ -64,7 +64,14 @@ public class Frag1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_frag1, container, false);
+        View vv = inflater.inflate(R.layout.fragment_frag1, container, false);
+        vv.findViewById(R.id.botonclick).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+            }
+        });
+        return vv;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
